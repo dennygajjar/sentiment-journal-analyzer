@@ -1,8 +1,9 @@
 from textblob import TextBlob
 
-user_sentence = input("Enter a sentence you want to analyze: ")
+Get a sentence from the user
+user_sentence = input("Enter a sentence to analyze: ")
 
+Analyze the sentence provided by the user
 text_to_analyze = TextBlob(user_sentence)
-sentiment = text_to_analyze.sentiment
 
-print("Sentiment Polarity:", sentiment.polarity)
+print("Sentiment Polarity: ", text_to_analyze.sentiment.polarity)
